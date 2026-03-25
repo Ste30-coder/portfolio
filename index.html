@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stefin James - Python Web Developer & AI/ML Engineer. Portfolio showcasing full-stack development, machine learning projects, and professional experience.">
+    <meta name="keywords" content="Stefin James, Python Developer, AI, Machine Learning, Django, Flask, Portfolio">
+    <meta name="author" content="Stefin James">
+    <title>Stefin James | Python Developer & AI/ML Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-gradient"></div>
+        <div class="bg-grid"></div>
+        <div class="floating-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="orb orb-4"></div>
+        </div>
+    </div>
+
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>SJ<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">Stefin James</span>
+                <span class="hero-role" id="typingText"></span>
+            </h1>
+            <p class="hero-description animate-on-scroll">
+                Computer Science graduate specializing in <span class="highlight">AI & Machine Learning</span>, 
+                building full-stack applications with <span class="highlight">Django</span>, 
+                <span class="highlight">Flask</span>, and modern web technologies.
+            </p>
+            <div class="hero-cta animate-on-scroll">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="96">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">ML Accuracy</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window animate-on-scroll">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">portfolio.py</span>
+                </div>
+                <div class="code-body">
+                    <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
+        <span class="code-param">self</span>.name = <span class="code-string">"Stefin James"</span>
+        <span class="code-param">self</span>.role = <span class="code-string">"Python Developer"</span>
+        <span class="code-param">self</span>.skills = [
+            <span class="code-string">"Django"</span>, <span class="code-string">"Flask"</span>,
+            <span class="code-string">"ML/AI"</span>, <span class="code-string">"React"</span>
+        ]
+        <span class="code-param">self</span>.passion = <span class="code-string">"Building solutions"</span>
+
+    <span class="code-keyword">def</span> <span class="code-func">create</span>(<span class="code-param">self</span>):
+        <span class="code-keyword">return</span> <span class="code-string">"Amazing things ✨"</span></code></pre>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+                <h2 class="section-title">Passionate Developer & <span class="gradient-text">AI Enthusiast</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll">
+                    <p>
+                        I'm a Computer Science graduate from <strong>APJ Abdul Kalam Technological University</strong> 
+                        specializing in AI and Machine Learning, currently transitioning into a professional 
+                        <strong>Python Web Developer</strong> role.
+                    </p>
+                    <p>
+                        With hands-on experience building full-stack applications using Django, SQL, and Bootstrap, 
+                        along with a strong background in developing ML-driven security solutions like phishing 
+                        detection systems, I'm passionate about writing clean, maintainable code and building 
+                        responsive web solutions that solve real-world problems.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Alappuzha, Kerala, India</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">Degree</span>
+                                <span class="info-value">B.Tech in CSE (AIML)</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-value">stefinjames1@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+91-8089552485</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards animate-on-scroll">
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Full Stack Development</h3>
+                        <p>Building responsive web apps with Django, Flask, React, and Angular</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI & Machine Learning</h3>
+                        <p>Developing ML models with TensorFlow, PyTorch, and scikit-learn</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Development</h3>
+                        <p>Cross-platform apps with Flutter and Dart for Android & iOS</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p>ML-driven security solutions for phishing detection & threat analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-laptop-code"></i> Technical Skills</span>
+                <h2 class="section-title">My <span class="gradient-text">Tech Stack</span></h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fab fa-js-square"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> C/C++</span>
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                    </div>
+                </div>
+                <!-- Frameworks & Libraries -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-python"></i> Django</span>
+                        <span class="skill-tag"><i class="fas fa-flask"></i> Flask</span>
+                        <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+                        <span class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        <span class="skill-tag"><i class="fas fa-brain"></i> TensorFlow</span>
+                        <span class="skill-tag"><i class="fas fa-fire"></i> PyTorch</span>
+                        <span class="skill-tag"><i class="fas fa-chart-line"></i> scikit-learn</span>
+                        <span class="skill-tag"><i class="fas fa-table"></i> Pandas</span>
+                        <span class="skill-tag"><i class="fas fa-calculator"></i> NumPy</span>
+                    </div>
+                </div>
+                <!-- Databases -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fas fa-leaf"></i> MongoDB</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQLite</span>
+                    </div>
+                </div>
+                <!-- Tools & Technologies -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="skill-tag"><i class="fab fa-linux"></i> Linux</span>
+                        <span class="skill-tag"><i class="fas fa-plug"></i> REST APIs</span>
+                        <span class="skill-tag"><i class="fas fa-sync-alt"></i> CI/CD</span>
+                        <span class="skill-tag"><i class="fab fa-aws"></i> AWS/GCP</span>
+                        <span class="skill-tag"><i class="fas fa-book"></i> Jupyter</span>
+                    </div>
+                </div>
+                <!-- AI/ML -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-cat-icon"><i class="fas fa-robot"></i></div>
+                        <h3>AI / Machine Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-language"></i> NLP</span>
+                        <span class="skill-tag"><i class="fas fa-eye"></i> Computer Vision</span>
+                        <span class="skill-tag"><i class="fas fa-network-wired"></i> Deep Learning</span>
+                        <span class="skill-tag"><i class="fas fa-rocket"></i> Model Deployment</span>
+                        <span class="skill-tag"><i class="fas fa-cogs"></i> Feature Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Experience</span>
+                <h2 class="section-title">Professional <span class="gradient-text">Journey</span></h2>
+            </div>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Python Full Stack Developer Trainee</h3>
+                                <span class="timeline-company">
+                                    <i class="fas fa-building"></i> Quest Innovative Solutions, Kochi
+                                </span>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="fas fa-calendar-alt"></i> July 2025 – Present
+                            </span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed login and registration functionalities, an Ecommerce cart system, and a school management system with roles for admin, teachers, and students using Django Framework.</li>
+                            <li>Implemented CRUD operations, a to-do list application, and an email-sending feature using Flask.</li>
+                            <li>Designed calculator, Registration form, login page with message box, and menu bar using Python Tkinter.</li>
+                            <li>Developed responsive Single Page Applications (SPAs) using Angular, utilizing components, services, and dependency injection for modular code.</li>
+                            <li>Integrated Angular frontends with Django/Flask REST APIs, ensuring seamless asynchronous data handling and a dynamic user experience.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Django</span>
+                            <span>Flask</span>
+                            <span>Angular</span>
+                            <span>REST APIs</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience 2 -->
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Flutter Developer Intern</h3>
+                                <span class="timeline-company">
+                                    <i class="fas fa-building"></i> Genzee Technologies LLP, Kochi
+                                </span>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="fas fa-calendar-alt"></i> June 2024 – July 2024
+                            </span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed cross-platform mobile applications using the Flutter framework and Dart, ensuring high performance across Android and iOS devices.</li>
+                            <li>Utilized Android Studio for application development, debugging, and managing virtual devices to streamline the mobile build process.</li>
+                            <li>Executed rigorous testing phases to validate app performance and security features.</li>
+                            <li>Collaborated on real-world cybersecurity-focused projects using industry-standard tools.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Android Studio</span>
+                            <span>Cybersecurity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-rocket"></i> Projects</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ste30-coder" target="_blank" rel="noopener" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Phishing Detection System</h3>
+                    <p class="project-description">
+                        Engineered ML model to detect phishing websites with <strong>96% accuracy</strong> using Random Forest and XGBoost algorithms. 
+                        Deployed as REST API using Flask, processing <strong>50+ requests/second</strong> with &lt;200ms latency.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Feature extraction pipeline analyzing URL structure, domain age, and content characteristics</li>
+                        <li>Web interface for real-time URL analysis, helping 100+ users identify malicious websites</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>NLP</span>
+                        <span>Flask</span>
+                        <span>scikit-learn</span>
+                    </div>
+                    <div class="project-year">2024</div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ste30-coder" target="_blank" rel="noopener" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Animal Detection & Alert System</h3>
+                    <p class="project-description">
+                        Engineered a real-time computer vision system using Python and OpenCV to detect animals in farms, 
+                        residential, and wildlife zones using the <strong>YOLOv3-tiny</strong> architecture.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Custom detection logic with 0.5 confidence threshold and automated alert responses</li>
+                        <li>Instant alert mechanism with audible alarms and digital notifications</li>
+                        <li>Optimized for low-latency performance on resource-constrained edge devices</li>
+                        <li>Visual feedback interface with dynamic bounding boxes and 72% accuracy labels on live feeds</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>YOLO-v3</span>
+                        <span>NumPy</span>
+                        <span>Tkinter</span>
+                    </div>
+                    <div class="project-year">2025</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Education</span>
+                <h2 class="section-title">Academic <span class="gradient-text">Background</span></h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card animate-on-scroll">
+                    <div class="edu-card-accent"></div>
+                    <div class="edu-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-date">2021 – 2025</span>
+                        <h3 class="edu-title">B.Tech in Computer Science and Engineering (AIML)</h3>
+                        <span class="edu-institution">APJ Abdul Kalam Technological University</span>
+                        <div class="edu-details">
+                            <h4>Relevant Coursework:</h4>
+                            <div class="coursework-tags">
+                                <span>Data Structures & Algorithms</span>
+                                <span>Machine Learning</span>
+                                <span>Artificial Intelligence</span>
+                                <span>Database Systems</span>
+                                <span>Web Development</span>
+                                <span>Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-card animate-on-scroll">
+                    <div class="edu-card-accent"></div>
+                    <div class="edu-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-date">2019 – 2021</span>
+                        <h3 class="edu-title">Higher Secondary Education</h3>
+                        <span class="edu-institution">Board of Higher Secondary Education, Govt. of Kerala</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Skills Section -->
+    <section class="section section-alt" id="soft-skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-heart"></i> Soft Skills</span>
+                <h2 class="section-title">Beyond <span class="gradient-text">Code</span></h2>
+            </div>
+            <div class="soft-skills-grid">
+                <div class="soft-skill-card animate-on-scroll">
+                    <div class="soft-skill-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3>Integrity</h3>
+                    <p>Maintained high standards of ethical coding and data security while developing sensitive projects, ensuring reliable datasets and transparent model reporting.</p>
+                </div>
+                <div class="soft-skill-card animate-on-scroll">
+                    <div class="soft-skill-icon"><i class="fas fa-headphones"></i></div>
+                    <h3>Active Listening</h3>
+                    <p>Translated complex client and instructor requirements into functional code during internships, ensuring technical features met user needs.</p>
+                </div>
+                <div class="soft-skill-card animate-on-scroll">
+                    <div class="soft-skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>Problem Solving</h3>
+                    <p>Optimized AI/ML workflows by transitioning to YOLOv3-tiny for real-time latency and engineering feature extraction pipelines to reach 96% accuracy.</p>
+                </div>
+                <div class="soft-skill-card animate-on-scroll">
+                    <div class="soft-skill-icon"><i class="fas fa-sync"></i></div>
+                    <h3>Adaptability</h3>
+                    <p>Quick learning curve transitioning from academic AIML theory to practical Full Stack Development, mastering Angular and Django frameworks rapidly.</p>
+                </div>
+                <div class="soft-skill-card animate-on-scroll">
+                    <div class="soft-skill-icon"><i class="fas fa-users"></i></div>
+                    <h3>Teamwork</h3>
+                    <p>Collaborated effectively with cross-functional teams using Agile methodologies to deliver complex features and cybersecurity solutions on schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Contact</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">I'm always open to discussing new projects, opportunities, or just having a tech chat.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-cards animate-on-scroll">
+                    <a href="mailto:stefinjames1@gmail.com" class="contact-card" id="contact-email">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>stefinjames1@gmail.com</p>
+                    </a>
+                    <a href="tel:+918089552485" class="contact-card" id="contact-phone">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+91-8089552485</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/stefin-james-6355723aa" target="_blank" rel="noopener" class="contact-card" id="contact-linkedin">
+                        <div class="contact-card-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>stefin-james</p>
+                    </a>
+                    <a href="https://github.com/Ste30-coder" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+                        <div class="contact-card-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>Ste30-coder</p>
+                    </a>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="form-name" name="name" placeholder=" " required>
+                            <label for="form-name">Your Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="form-email" name="email" placeholder=" " required>
+                            <label for="form-email">Your Email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="form-subject" name="subject" placeholder=" " required>
+                            <label for="form-subject">Subject</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="form-message" name="message" rows="4" placeholder=" " required></textarea>
+                            <label for="form-message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Stefin James<span class="logo-bracket">/&gt;</span>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/stefin-james-6355723aa" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Ste30-coder" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:stefinjames1@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-text">
+                    &copy; 2025 Stefin James. Crafted with <i class="fas fa-heart" style="color: #ef4444;"></i> and Python
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
